@@ -15,7 +15,6 @@ For inquiries or collaboration opportunities, contact us at [js.lee@csi-vision.c
 ---
 
 ## 📁 Project Structure
-
 .
 ├── config.py
 ├── detector.py
@@ -23,7 +22,6 @@ For inquiries or collaboration opportunities, contact us at [js.lee@csi-vision.c
 ├── main.py
 ├── utils.py
 └── websocket_server.py
-
 ---
 
 ## 🔧 File Descriptions
@@ -94,8 +92,24 @@ SmartBeam is ideal for:
 
 ---
 
-## 🚀 Run Instructions
+## 📦 Download YOLOv11 Model
 
+You will need the YOLOv11 instance segmentation model to run this project.
+
+1. Download the pretrained model:  
+   [**yolo11n-seg.pt**](https://github.com/ultralytics/ultralytics/releases)  
+   *(Or use your own trained `.pt` model if preferred)*
+
+2. Place the model file in your project root or update `MODEL_PATH` in `config.py` accordingly:
+```python
+MODEL_PATH = "yolo11n-seg.pt"
+```
+
+---
+
+## 🚀 Run Instructions
 ```bash
 pip install -r requirements.txt
 python main.py
+```
+Make sure your Unity scene is open and listening for WebSocket data to receive the real-time coordinates.
