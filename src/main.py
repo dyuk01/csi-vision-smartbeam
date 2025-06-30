@@ -4,7 +4,7 @@ from detector import Detector
 from logger import log_event
 from websocket_server import start_server
 
-log_event("🚀 Program started.")
+log_event(f"\n🚀 Program started.")
 
 # Initialize shared queue
 packet_queue = queue.Queue()
@@ -16,4 +16,4 @@ start_server(packet_queue)
 detector = Detector(packet_queue)
 detector.run()
 
-log_event(f"✅ Program terminated.\n")
+log_event(f"✅ Program terminated.")
