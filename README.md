@@ -15,6 +15,7 @@ For inquiries or collaboration opportunities, contact us at [js.lee@csi-vision.c
 ---
 
 ## 📁 Project Structure
+```
 .
 ├── config.py
 ├── detector.py
@@ -22,6 +23,7 @@ For inquiries or collaboration opportunities, contact us at [js.lee@csi-vision.c
 ├── main.py
 ├── utils.py
 └── websocket_server.py
+```
 ---
 
 ## 🔧 File Descriptions

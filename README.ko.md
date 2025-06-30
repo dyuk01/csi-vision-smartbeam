@@ -13,6 +13,7 @@ SmartBeam은 실시간 공간 컴퓨팅, 프로젝션 매핑, 컴퓨터 비전 �
 ---
 
 ## 📁 프로젝트 구조
+```
 .
 ├── config.py
 ├── detector.py
@@ -20,6 +21,7 @@ SmartBeam은 실시간 공간 컴퓨팅, 프로젝션 매핑, 컴퓨터 비전 �
 ├── main.py
 ├── utils.py
 └── websocket_server.py
+```
 
 ---
 
