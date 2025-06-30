@@ -95,7 +95,7 @@ SmartBeam은 다음과 같은 용도에 이상적입니다:
 이 프로젝트를 실행하려면 YOLOv11 인스턴스 분할 모델이 필요합니다.
 
 1. 사전 훈련된 모델을 다운로드하세요:
-[**yolo11n-seg.pt**](https://github.com/ultralytics/ultralytics/releases)
+[**yolo11n-seg.pt**](https://docs.ultralytics.com/ko/tasks/segment/)
 *(또는 원한다면 자체 훈련된 `.pt` 모델을 사용하세요)*
 
 2. 모델 파일을 프로젝트 루트에 배치하거나 `config.py`에서 `MODEL_PATH`를 적절히 업데이트하세요:
