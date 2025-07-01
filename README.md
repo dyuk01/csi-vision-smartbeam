@@ -99,7 +99,7 @@ SmartBeam is ideal for:
 You will need the YOLOv11 instance segmentation model to run this project.
 
 1. Download the pretrained model:  
-   [**yolo11n-seg.pt**](https://github.com/ultralytics/ultralytics/releases)  
+   [**yolo11n-seg.pt**](https://docs.ultralytics.com/ko/tasks/segment/)  
    *(Or use your own trained `.pt` model if preferred)*
 
 2. Place the model file in your project root or update `MODEL_PATH` in `config.py` accordingly:

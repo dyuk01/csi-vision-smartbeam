@@ -45,4 +45,4 @@ def start_server(queue) -> None:
         except Exception as e:
             log_event(f"❌ Server init failed: {str(e)}")
 
-    threading.Thread(thread=start_thread(), daemon=True).start()
+    threading.Thread(target=start_thread, daemon=True).start()
