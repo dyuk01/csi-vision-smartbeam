@@ -4,16 +4,19 @@ from detector import Detector
 from logger import log_event
 from websocket_server import start_server
 
-log_event(f"\n🚀 Program started.")
+def main() -> None:
+    # Starting program message
+    log_event("")
+    log_event(f"🚀 Program started.")
 
-# Initialize shared queue
-packet_queue = queue.Queue()
+    # Initialize the WebSocket server and detector
+    packet_queue = queue.Queue()
+    start_server(packet_queue)
+    detector = Detector(packet_queue)
+    detector.run()
 
-# Start WebSocket server
-start_server(packet_queue)
+    log_event(f"✅ Program terminated.")
 
-# Run detection loop
-detector = Detector(packet_queue)
-detector.run()
 
-log_event(f"✅ Program terminated.")
+if __name__ == "__main__":
+    main()

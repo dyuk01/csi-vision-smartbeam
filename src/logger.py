@@ -1,16 +1,11 @@
-import os
+import logging
 
-from datetime import datetime
+logging.basicConfig(
+    format="[%(asctime)s] %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    level=logging.INFO  # You can change to DEBUG for more verbose output
+)
 
-# Ensure logs directory exists
-LOG_DIR = "logs"
-os.makedirs(LOG_DIR, exist_ok=True)
 
 def log_event(message: str) -> None:
-    now = datetime.now()
-    timestamp = now.strftime("[%Y-%m-%d %H:%M:%S]")
-    log_filename = now.strftime("%Y-%m-%d.txt")
-    log_path = os.path.join(LOG_DIR, log_filename)
-
-    with open(log_path, "a") as f:
-        f.write(f"{timestamp} {message}\n")
+    logging.info(message)

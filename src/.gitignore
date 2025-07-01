@@ -10,9 +10,6 @@ ENV/
 .venv/
 .pipenv/
 
-# Configuration files (if sensitive or auto-generated)
-config.py
-
 # Unit test / coverage reports
 coverage/
 htmlcov/
